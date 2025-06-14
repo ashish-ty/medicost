@@ -1,12 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  // Completely disable SWC to avoid WebContainer compatibility issues
   swcMinify: false,
-  experimental: {
-    // Disable SWC entirely for WebContainer compatibility
-    swcLoader: false,
-    swcMinify: false,
-  },
 }
 
 module.exports = nextConfig
